@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Personalized } from "@src/components";
+import { Personalized, HowItWorks } from "@src/components";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+      <HowItWorks />
       <Personalized />
     </main>
   );

@@ -10,19 +10,27 @@ const Personalized = () => {
   const items = [
     {
       label: "Retail",
+      title: "Financial Services",
       text: "Get more customers, credit applications, and accounts with a reputation people trust.",
+      img: "img-1.jpg",
     },
     {
       label: "Home Services",
+      title: "Financial Services",
       text: "Get more customers, credit applications, and accounts with a reputation people trust.",
+      img: "img-1.jpg",
     },
     {
       label: "Real Estate",
+      title: "Financial Services",
       text: "Get more customers, credit applications, and accounts with a reputation people trust.",
+      img: "img-1.jpg",
     },
     {
       label: "Restaurants",
+      title: "Financial Services",
       text: "Get more customers, credit applications, and accounts with a reputation people trust.",
+      img: "img-1.jpg",
     },
   ];
 
@@ -45,7 +53,11 @@ const Personalized = () => {
                 >
                   <div className="flex justify-between items-center">
                     {item.label}
-                    <div>
+                    <div
+                      className={classNames(
+                        activeTab === index ? "rotate-90" : "rotate-0"
+                      )}
+                    >
                       <Image
                         src="/images/icon-2.png"
                         alt=""
@@ -60,9 +72,7 @@ const Personalized = () => {
                       activeTab === index ? "block" : "hidden"
                     )}
                   >
-                    <h3 className="text-[30px] font-bold mb-3">
-                      Financial Services
-                    </h3>
+                    <h3 className="text-[30px] font-bold mb-3">{item.title}</h3>
 
                     <p className="text-[20px] mb-3">{item.text}</p>
 
@@ -83,7 +93,7 @@ const Personalized = () => {
             <div className="py-12 px-11 rounded-[30px] bg-white border border-[#000] min-h-[570px]">
               <div className="relative h-full rounded-[30px] overflow-hidden border border-[#000]">
                 <Image
-                  src="/images/img-1.jpg"
+                  src={`/images/${items[activeTab].img}`}
                   alt=""
                   layout="fill"
                   style={{ objectFit: "cover" }}
