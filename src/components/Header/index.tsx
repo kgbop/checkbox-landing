@@ -4,15 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@src/components";
 import { ROUTES } from "@src/constants/";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classNames from "classnames";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  showMenu
-    ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = "initial");
+  useEffect(() => {
+    showMenu
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "initial");
+  }, [showMenu]);
 
   const navItems = [
     { text: "Product", href: "#" },
