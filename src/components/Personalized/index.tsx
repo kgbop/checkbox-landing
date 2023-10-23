@@ -1,9 +1,12 @@
 "use client";
 
 import classNames from "classnames";
+import { Days_One } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 import { SecondaryButton } from "@src/components";
+
+const daysOne = Days_One({ weight: ["400"], subsets: ["latin"] });
 
 const Personalized = () => {
   const [activeTab, setActiveTab] = useState(2);
@@ -36,17 +39,23 @@ const Personalized = () => {
   ];
 
   return (
-    <section className="bg-[#E3E3E3] pt-[54px] pb-[100px]">
+    <section className="bg-[#E3E3E3] pt-[54px] pb-[100px] border-t border-t-[#000]">
       <div className="container">
-        <div className="px-[60px]">
-          <h2 className="text-[40px] text-[#000] font-bold text-center mb-[55px]">
+        <div className="px-[60px] lg:px-0">
+          <h2
+            className={classNames(
+              daysOne.className,
+              "text-[40px] text-[#000] text-center mb-[55px]"
+            )}
+          >
             Personalized for your industry and business.
           </h2>
 
-          <div className="grid grid-cols-[0.8fr_1fr] gap-[52px]">
+          <div className="grid grid-cols-[0.8fr_1fr] gap-[52px] lg:grid-cols-[1fr]">
             <ul className="flex flex-col gap-10 text-[24px] font-medium leading-[30px] text-[#000]">
               {items.map((item, index) => (
                 <li
+                  key={index}
                   className="cursor-pointer"
                   onClick={() => {
                     setActiveTab(index);
@@ -73,7 +82,14 @@ const Personalized = () => {
                       activeTab === index ? "block" : "hidden"
                     )}
                   >
-                    <h3 className="text-[30px] font-bold mb-3">{item.title}</h3>
+                    <h3
+                      className={classNames(
+                        daysOne.className,
+                        "text-[30px] font-bold mb-3"
+                      )}
+                    >
+                      {item.title}
+                    </h3>
 
                     <p className="text-[20px] mb-3">{item.text}</p>
 
@@ -83,7 +99,7 @@ const Personalized = () => {
               ))}
             </ul>
 
-            <div className="py-12 px-11 rounded-[30px] bg-white border border-[#000] min-h-[570px]">
+            <div className="py-12 px-11 rounded-[30px] bg-white border border-[#000] min-h-[570px] lg:p-6">
               <div className="relative h-full rounded-[30px] overflow-hidden border border-[#000]">
                 <Image
                   src={`/images/${items[activeTab].img}`}

@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { Personalized, HowItWorks, Intro, SectionOne } from "@src/components";
+import {
+  Personalized,
+  HowItWorks,
+  Intro,
+  SectionOne,
+  SectionTwo,
+  SectionThree,
+} from "@src/components";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -13,6 +20,8 @@ export default function Home() {
       <HowItWorks />
       <Personalized />
       <SectionOne />
+      <SectionTwo />
+      <SectionThree />
     </main>
   );
 }

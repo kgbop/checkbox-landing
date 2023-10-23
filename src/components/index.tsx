@@ -8,6 +8,8 @@ import Input from "@src/components/Input";
 import CollectReviews from "@src/components/CollectReviews";
 import SectionOne from "@src/components/SectionOne";
 import SecondaryButton from "@src/components/SecondaryButton";
+import SectionTwo from "@src/components/SectionTwo";
+import SectionThree from "@src/components/SectionThree";
 
 export {
   Header,
@@ -20,4 +22,6 @@ export {
   CollectReviews,
   SectionOne,
   SecondaryButton,
+  SectionTwo,
+  SectionThree,
 };

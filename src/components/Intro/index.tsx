@@ -1,18 +1,26 @@
 "use client";
 
 import Image from "next/image";
-
+import { Days_One } from "next/font/google";
 import { Input, Button } from "@src/components";
+import classNames from "classnames";
+
+const daysOne = Days_One({ weight: ["400"], subsets: ["latin"] });
 
 const Intro = () => {
   return (
     <section className="py-10">
       <div className="container">
-        <div className="grid grid-cols-[0.7fr_1fr] h-[650px]">
+        <div className="grid grid-cols-[0.7fr_1fr] h-[650px] md:grid-cols-[1fr] md:h-auto">
           <div className="flex flex-col justify-center">
-            <div className="max-w-[360px] flex flex-col gap-6">
+            <div className="max-w-[370px] flex flex-col gap-6 md:max-w-none">
               <div className="relative">
-                <h1 className="text-[38px] text-[#000] font-bold">
+                <h1
+                  className={classNames(
+                    daysOne.className,
+                    "text-[38px] text-[#000]"
+                  )}
+                >
                   Double your <br /> five-star reviews.
                 </h1>
 
@@ -33,22 +41,27 @@ const Intro = () => {
 
               <Input placeholder="Enter your email address" />
 
-              <div className="grid grid-cols-[1fr_1fr] gap-5 items-center">
+              <div className="grid grid-cols-[1fr_1fr] gap-5 items-center sm:grid-cols-[1fr]">
                 <Button text="Keep me in the loop" />
 
-                <p className="text-[12px] text-[#C6C6C6]">
+                <p
+                  className={classNames(
+                    daysOne.className,
+                    "text-[12px] text-[#C6C6C6]"
+                  )}
+                >
                   FREE FOREVER. <br /> NO CREDIT CARD.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative md:h-[400px]">
             <Image
               src="/images/img-5.png"
               alt=""
               layout="fill"
-              style={{ objectFit: "cover" }}
+              objectFit="contain"
             />
 
             <button className="bg-[#D7D7D7] border border-[#000] rounded-[10px] h-11 w-[188px] text-[16px] font-bold cursor-pointer absolute bottom-0 flex items-center justify-center">
