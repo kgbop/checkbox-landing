@@ -3,6 +3,7 @@
 import classNames from "classnames";
 import Image from "next/image";
 import { useState } from "react";
+import { SecondaryButton } from "@src/components";
 
 const Personalized = () => {
   const [activeTab, setActiveTab] = useState(2);
@@ -76,15 +77,7 @@ const Personalized = () => {
 
                     <p className="text-[20px] mb-3">{item.text}</p>
 
-                    <button className="text-[17px] text-[#707070] font-bold flex gap-4 items-center">
-                      Get started now
-                      <Image
-                        src="/images/icon-3.png"
-                        alt=""
-                        width={40}
-                        height={12}
-                      />
-                    </button>
+                    <SecondaryButton text="Get started now" />
                   </div>
                 </li>
               ))}
