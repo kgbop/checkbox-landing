@@ -50,8 +50,9 @@ const HowItWorks = () => {
                 <Image
                   src={`/images/${item.img}`}
                   alt=""
-                  layout="fill"
-                  objectFit="contain"
+                  fill
+                  sizes="100%"
+                  style={{ objectFit: "contain" }}
                 />
               </div>
 

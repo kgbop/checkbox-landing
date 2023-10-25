@@ -104,7 +104,8 @@ const Personalized = () => {
                 <Image
                   src={`/images/${items[activeTab].img}`}
                   alt=""
-                  layout="fill"
+                  fill
+                  sizes="100%"
                   style={{ objectFit: "cover" }}
                 />
               </div>

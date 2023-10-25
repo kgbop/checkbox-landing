@@ -60,8 +60,9 @@ const Intro = () => {
             <Image
               src="/images/img-5.png"
               alt=""
-              layout="fill"
-              objectFit="contain"
+              fill
+              sizes="100%"
+              style={{ objectFit: "contain" }}
             />
 
             <button className="bg-[#D7D7D7] border border-[#000] rounded-[10px] h-11 w-[188px] text-[16px] font-bold cursor-pointer absolute bottom-0 flex items-center justify-center">

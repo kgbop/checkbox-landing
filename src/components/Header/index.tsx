@@ -18,7 +18,7 @@ const Header = () => {
 
   const navItems = [
     { text: "Product", href: "#" },
-    { text: "Pricing", href: "#" },
+    { text: "Pricing", href: ROUTES.PRICING },
   ];
 
   return (
@@ -26,7 +26,7 @@ const Header = () => {
       <div className="container py-[37px] flex items-center justify-between">
         <Link href={ROUTES.HOME}>
           <div className="w-[230px] h-[46px] relative">
-            <Image src="/images/logo.svg" alt="" layout="fill" />
+            <Image src="/images/logo.svg" alt="" fill sizes="100%" />
           </div>
         </Link>
 
@@ -39,7 +39,7 @@ const Header = () => {
           <ul className="text-[#000] text-[20px] font-bold flex gap-7 ml-[55px] flex-auto md:ml-0 md:flex-col md:flex-none">
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link href="#">{item.text}</Link>
+                <Link href={item.href}>{item.text}</Link>
               </li>
             ))}
           </ul>

@@ -12,8 +12,9 @@ const SectionTwo = () => {
             <Image
               src="/images/img-9.png"
               alt=""
-              layout="fill"
-              objectFit="contain"
+              fill
+              sizes="100%"
+              style={{ objectFit: "contain" }}
             />
           </div>
 
