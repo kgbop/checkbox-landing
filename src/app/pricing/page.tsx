@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@src/components";
 import { Metadata } from "next";
-import { Days_One, Ubuntu } from "next/font/google";
+import {Days_One, Lato} from "next/font/google";
 import classNames from "classnames";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const daysOne = Days_One({ weight: ["400"], subsets: ["latin"] });
-const ubuntu = Ubuntu({ weight: ["400", "700"], subsets: ["latin"] });
+const lato = Lato({ weight: ["400", "700"], subsets: ["latin"] });
 
 function Pricing() {
   const tableValues = [
@@ -45,8 +45,8 @@ function Pricing() {
             >
               Pricing
             </h1>
-            <p className="text-[18px] text-[rgba(20,20,20,0.50)]">
-              Use PostHog free forever (with generous usage limits). Or pay per
+            <p className="text-[18px]">
+              Use Checkbox free forever (with generous usage limits). Or pay per
               use and get unrestricted access to everything.
             </p>
           </div>
@@ -64,26 +64,24 @@ function Pricing() {
 
         <div
           className={classNames(
-            ubuntu.className,
+              lato.className,
             "grid grid-cols-[1fr_1.2fr] pt-[70px] gap-4 md:grid-cols-[1fr]"
           )}
         >
           <div className="max-w-[340px]">
-            <p className="text-[#000] text-[15px] font-bold">
+            <p className="text-[15px] font-bold">
               Checkbox ships with all products
             </p>
-            <p className="text-[rgba(20,20,20,0.50)] text-[14px]">
-              Generous free usage on every product. Best for early-stage
-              startups and hobbyists.
+            <p className="text-[14px]">
+              Generous free usage on every product.
             </p>
           </div>
 
           <div className="grid grid-cols-[1fr_1fr] gap-4 sm:grid-cols-[1fr]">
             <div>
               <p className="text-[#000] text-[15px] font-bold">Free</p>
-              <p className="text-[rgba(20,20,20,0.50)] text-[14px] mb-3">
-                Generous free usage on every product. Best for early-stage
-                startups and hobbyists.
+              <p className=" text-[14px] mb-3">
+                Generous free usage on every business. Best for small businesses.
               </p>
               <Button text="Get started - free" className="w-full" />
             </div>
@@ -92,7 +90,7 @@ function Pricing() {
               <p className="text-[#000] text-[15px] font-bold">
                 Paid - $99/month
               </p>
-              <p className="text-[rgba(20,20,20,0.50)] text-[14px] mb-3">
+              <p className="text-[14px] mb-3">
                 Generous free usage on every product. Best for early-stage
                 startups and hobbyists.
               </p>
@@ -105,7 +103,7 @@ function Pricing() {
           <tbody>
             {tableValues.map((item, index) => (
               <tr key={index} className="[&>td]:p-[5px]">
-                <td className={classNames(ubuntu.className, "w-1/2 md:w-2/3")}>
+                <td className={classNames(lato.className, "w-1/2 md:w-2/3")}>
                   <span className="border-b border-b-[rgba(20,20,20,0.50)] text-[14px] font-bold">
                     {item.label}
                   </span>

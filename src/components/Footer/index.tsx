@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Ubuntu } from "next/font/google";
+import {Lato, Ubuntu} from "next/font/google";
 import classNames from "classnames";
 
-const ubuntu = Ubuntu({ weight: ["400"], subsets: ["latin"] });
+ const lato = Lato({ weight: ["400", "700"], subsets: ["latin"] });
 
 const Footer = () => {
   const socialItems = [
@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#E3E3E3] relative border-t border-t-[#000]">
-      <div className={classNames(ubuntu.className, "container pt-[73px] pb-6")}>
+      <div className={classNames(lato.className, "container pt-[73px] pb-6")}>
         <ul className="flex gap-10 justify-center">
           {socialItems.map((item, index) => (
             <li key={index}>

@@ -58,7 +58,7 @@ const Intro = () => {
 
           <div className="relative md:h-[400px]">
             <Image
-              src="/images/img-5.png"
+              src="/images/img-5.svg"
               alt=""
               fill
               sizes="100%"

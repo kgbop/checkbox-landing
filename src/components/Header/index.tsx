@@ -45,10 +45,6 @@ const Header = () => {
           </ul>
 
           <div className="flex gap-[35px] items-center md:flex-col">
-            <Link href="#" className="text-[#000] text-[20px] font-bold">
-              Sign In
-            </Link>
-
             <Button text="Join Waitlist" />
           </div>
 

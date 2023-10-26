@@ -11,24 +11,24 @@ const HowItWorks = () => {
     {
       title: "Choose",
       text: "Tons of options: funnel layout, email, SMS, Invite, in-product widgets, QR codes.",
-      img: "img-2.png",
+      img: "img-2.svg",
     },
     {
       title: "Generate",
       text: "Automate and start seamlessly generating. Make leaving a review effortless.",
-      img: "img-3.png",
+      img: "img-3.svg",
     },
     {
       title: "Build Trust",
       text: "Showcase new reviews on your website and turn first-time visitors into repeat customers.",
-      img: "img-4.png",
+      img: "img-4.svg",
     },
   ];
 
   return (
     <section
       className="pt-[113px] pb-[270px]"
-      style={{ backgroundImage: `url(/images/bg.png)` }}
+      style={{ backgroundImage: `url(/images/bg.svg)` }}
     >
       <div className="container">
         <h2

@@ -10,7 +10,7 @@ const daysOne = Days_One({ weight: ["400"], subsets: ["latin"] });
 const CollectReviews = () => {
   return (
     <div className="flex flex-col gap-3 max-w-[410px] md:max-w-none">
-      <Image src="/images/img-7.png" alt="" width={136} height={57} />
+      <Image src="/images/img-7.svg" alt="" width={136} height={57} />
 
       <h2
         className={classNames(
