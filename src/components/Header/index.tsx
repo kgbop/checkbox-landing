@@ -16,10 +16,7 @@ const Header = () => {
       : (document.body.style.overflow = "initial");
   }, [showMenu]);
 
-  const navItems = [
-    { text: "Product", href: "#" },
-    { text: "Pricing", href: ROUTES.PRICING },
-  ];
+  const navItems = [{ text: "", href: "" }];
 
   return (
     <header>
