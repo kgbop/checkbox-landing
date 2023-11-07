@@ -7,6 +7,7 @@ import {
   SectionTwo,
   SectionThree,
 } from "@src/components";
+import OfferBlock from "@src/components/OfferBlock";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -22,6 +23,7 @@ export default function Home() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+        <OfferBlock />
     </main>
   );
 }

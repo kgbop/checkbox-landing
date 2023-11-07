@@ -18,12 +18,12 @@ const CollectReviews = () => {
           "text-[30px] font-bold max-w-[300px]"
         )}
       >
-        Collect reviews in real-time
+        Zero Friction
       </h2>
 
       <p className="text-[20px]">
-        Ask for reviews before your customers leave — then send them straight to
-        your favorite review site with a custom QR code.
+        Minimize steps and eliminate complexities. A single tap or click should
+        be all it takes for your customers to start the review process.
       </p>
 
       <SecondaryButton text="Generate Reviews" />

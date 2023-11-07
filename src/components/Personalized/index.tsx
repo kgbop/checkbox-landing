@@ -14,27 +14,27 @@ const Personalized = () => {
   const items = [
     {
       label: "Retail",
-      title: "Financial Services",
-      text: "Get more customers, credit applications, and accounts with a reputation people trust.",
-      img: "img-1.jpg",
+      title: "Retail",
+      text: "Build a trusted brand that stands out in the competitive retail landscape.",
+      img: "img-1.png",
     },
     {
       label: "Home Services",
-      title: "Financial Services",
-      text: "Get more customers, credit applications, and accounts with a reputation people trust.",
-      img: "img-1.jpg",
+      title: "Home Services",
+      text: "Attract homeowners with a showcase of reliable reviews, driving demand for your services, encouraging more bookings, and increasing client retention.",
+      img: "img-1.png",
     },
     {
       label: "Real Estate",
-      title: "Financial Services",
-      text: "Get more customers, credit applications, and accounts with a reputation people trust.",
-      img: "img-1.jpg",
+      title: "Real Estate",
+      text: "Become the go-to expert in the competitive real estate market where trustworthiness equals success.",
+      img: "img-1.png",
     },
     {
       label: "Restaurants",
-      title: "Financial Services",
-      text: "Get more customers, credit applications, and accounts with a reputation people trust.",
-      img: "img-1.jpg",
+      title: "Restaurants",
+      text: "A big collection of positive reviews can turn first-time guests into regular customers.",
+      img: "img-1.png",
     },
   ];
 

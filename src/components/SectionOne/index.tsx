@@ -14,7 +14,7 @@ const SectionOne = () => {
 
           <div className="relative h-full md:h-[400px] sm:h-[200px]">
             <Image
-              src="/images/img-8.png"
+              src="/images/zero-friction.svg"
               alt=""
               fill
               sizes="100%"
